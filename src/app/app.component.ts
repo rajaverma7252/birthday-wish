@@ -23,7 +23,7 @@ export class AppComponent {
     var that = this;
     if (event == "Let's play some music") {
       let audio = new Audio();
-      audio.src = "../assets/hbd.mp3";
+      audio.src = "./assets/hbd.mp3";
       audio.loop = true;
       audio.play();
       setTimeout(() => {
