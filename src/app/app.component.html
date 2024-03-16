@@ -40,19 +40,23 @@
         }
       </div>
 
+      @if (!message) {
       <div class="pill-group">
         <a class="pill" (click)="onClickBtn(btnTitle);">
-          {{ btnTitle }}
+          {{ btnTitle }}&nbsp;<img src="./assets/clickme.svg">
         </a>
       </div>
+      }
 
-      @if (message) { 
-      <p class="delayShow">6 April is so special to you, let's make it the best celebration ever and let me share a piece of happiness
+      @if (message) {
+      <p class="delayShow">6 April is so special to you, let's make it the best celebration ever and let me share a
+        piece of happiness
         to you, may your life be at ease, may all your wishes come true. I hope you'll find happiness along the way,
-        enjoy every single moment, Lastly I'd like to wish you one more time: a very happy birthday. Thanks for being
+        enjoy every single moment, Lastly I'd like to wish you one more time : a very happy birthday. Thanks for being
         there, thanks for everything. I wish you all the best.🥰
       </p>
-      <p class="delayShow titleDesign">~ ₹↑J↓</p>
+      <br>
+      <div class="delayShow titleDesign font-weight-500">~ ₹↑J↓</div>
       }
     </div>
   </div>

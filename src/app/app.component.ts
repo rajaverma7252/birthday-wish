@@ -10,6 +10,7 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class AppComponent {
+  //ng build --output-path=docs/ --base-href=/birthday-wish/
   public title: string = "birthday-wish";
   public btnTitle: string = "Let's play some music";
   public arrangeBulbs: boolean = false;
@@ -32,31 +33,31 @@ export class AppComponent {
       that.arrangeBulbs = true;
       setTimeout(() => {
         that.btnTitle = "Let's decorate theme";
-      }, 500);
+      }, 250);
     }
     else if (event == "Let's decorate theme") {
       that.decorateTheme = true;
       setTimeout(() => {
-        that.btnTitle = "Let's fly some ballons";
-      }, 500);
+        that.btnTitle = "Let's fly some balloons";
+      }, 250);
     }
-    else if (event == "Let's fly some ballons") {
+    else if (event == "Let's fly some balloons") {
       that.flyBallons = true;
       setTimeout(() => {
         that.btnTitle = "Let's see your cake";
-      }, 500);
+      }, 250);
     }
     else if (event == "Let's see your cake") {
       that.seeCake = true;
       setTimeout(() => {
-        that.btnTitle = "Happy birthday @Pynk";
-      }, 500);
+        that.btnTitle = "Let me wish you ...@Pynk";
+      }, 250);
     }
-    else if (event == "Happy birthday @Pynk") {
+    else if (event == "Let me wish you ...@Pynk") {
       that.happyBday = true;
       setTimeout(() => {
         that.btnTitle = "A message for you";
-      }, 500);
+      }, 250);
     }
     else if (event == "A message for you") {
       that.message = true;
