@@ -26,39 +26,37 @@ export class AppComponent {
       audio.src = "./assets/hbd.mp3";
       audio.loop = true;
       audio.play();
-      setTimeout(() => {
-        that.btnTitle = "Let's arrange some bulbs";
-      }, 1000);
+      that.btnTitle = "Let's arrange some bulbs";
     }
     else if (event == "Let's arrange some bulbs") {
       that.arrangeBulbs = true;
       setTimeout(() => {
         that.btnTitle = "Let's decorate theme";
-      }, 1000);
+      }, 500);
     }
     else if (event == "Let's decorate theme") {
       that.decorateTheme = true;
       setTimeout(() => {
         that.btnTitle = "Let's fly some ballons";
-      }, 1000);
+      }, 500);
     }
     else if (event == "Let's fly some ballons") {
       that.flyBallons = true;
       setTimeout(() => {
         that.btnTitle = "Let's see your cake";
-      }, 1000);
+      }, 500);
     }
     else if (event == "Let's see your cake") {
       that.seeCake = true;
       setTimeout(() => {
         that.btnTitle = "Happy birthday @Pynk";
-      }, 1000);
+      }, 500);
     }
     else if (event == "Happy birthday @Pynk") {
       that.happyBday = true;
       setTimeout(() => {
         that.btnTitle = "A message for you";
-      }, 1000);
+      }, 500);
     }
     else if (event == "A message for you") {
       that.message = true;

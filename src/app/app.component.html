@@ -1,45 +1,58 @@
 <main class="main">
   <div class="content">
-    <div class="left-side">
-      @if (decorateTheme) {
-      <img src="./assets/banner.png" height="80" width="280">
-      }
-      @if (flyBallons) {
-      <img src="./assets/Balloons.png" height="80" width="280">
-      }
-      @if (seeCake) {
-      <div class="center">
-        <img src="./assets/cake.jpg" height="170" width="280">
-      </div>
-      }
-      @if (happyBday) {
-      <div class="center">
-        <img src="./assets/happyBday.jpg" height="140" width="140">
-        <img src="./assets/pynk.jpeg" height="140" width="140">
-      </div>
-      }
-    </div>
     <div class="right-side">
-      @if (arrangeBulbs) {
-      @for (item of [1,2,3,4,5,6,7]; track item) {
-      <img src="./assets/bulb_{{item}}.png" height="55" width="55">
-      }
-      }
       <h1><span class="HelloDesign">Hello,</span> <span class="titleDesign">✰Р𝚛ᵢ𝘺𝖆nк𝒂✰</span></h1>
       <p>🎉Congratulations🎉, It's your birthday. 🎉</p>
       <p>Let's wish & celebrate your amazing day... 🎉</p>
+
+      <div class="mt-2">
+        @if (arrangeBulbs) { @for (item of [1,2,3,4,5,6,7]; track item) {
+        <img src="./assets/bulb_{{item}}.png" height="55" width="55">
+        }}
+      </div>
+
+      <div class="mt-2">
+        @if (decorateTheme) {
+        <img src="./assets/banner.png" height="80" width="280">
+        }
+      </div>
+
+      <div class="mt-2">
+        @if (flyBallons) {
+        <img src="./assets/Balloons.png" height="80" width="280">
+        }
+      </div>
+
+      <div class="mt-2">
+        @if (seeCake) {
+        <div class="center">
+          <img src="./assets/cake.jpg" height="170" width="280">
+        </div>
+        }
+      </div>
+
+      <div class="mt-2">
+        @if (happyBday) {
+        <div class="center">
+          <img src="./assets/happyBday.jpg" height="140" width="140">
+          <img src="./assets/pynk.jpeg" height="140" width="140">
+        </div>
+        }
+      </div>
+
       <div class="pill-group">
         <a class="pill" (click)="onClickBtn(btnTitle);">
           {{ btnTitle }}
         </a>
       </div>
-      @if (message) {
-      <p>6 April is so special to you, let's make it the best celebration ever and let me share a piece of happiness
+
+      @if (message) { 
+      <p class="delayShow">6 April is so special to you, let's make it the best celebration ever and let me share a piece of happiness
         to you, may your life be at ease, may all your wishes come true. I hope you'll find happiness along the way,
-        enjoy every single moment, Lastly I'd like to wish you one more time a very happy birthday. Thanks for being
+        enjoy every single moment, Lastly I'd like to wish you one more time: a very happy birthday. Thanks for being
         there, thanks for everything. I wish you all the best.🥰
       </p>
-      ~ ₹↑J↓
+      <p class="delayShow titleDesign">~ ₹↑J↓</p>
       }
     </div>
   </div>
